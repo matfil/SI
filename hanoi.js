@@ -19,6 +19,9 @@ if (numberOfDiscs % 2 === 0) {
             console.log('Moving disc from 2nd peg to 1st peg');
             towers[0].push(towers[1].pop());
         }
+        if (towers[2].length == numberOfDiscs) {
+            break;
+        }
         //1<->3
         if (sizeOfLastDisc(towers, 0, numberOfDiscs) < sizeOfLastDisc(towers, 2, numberOfDiscs)) {
             console.log('Moving disc from 1st peg to 3rd peg');
@@ -30,6 +33,9 @@ if (numberOfDiscs % 2 === 0) {
         if (towers[2].length == numberOfDiscs) {
             break;
         }
+        if (towers[2].length == numberOfDiscs) {
+            break;
+        }
         //2<->3
         if (sizeOfLastDisc(towers, 1, numberOfDiscs) < sizeOfLastDisc(towers, 2, numberOfDiscs)) {
             console.log('Moving disc from 2nd peg to 3rd peg');
@@ -37,6 +43,9 @@ if (numberOfDiscs % 2 === 0) {
         } else if (sizeOfLastDisc(towers, 1, numberOfDiscs) > sizeOfLastDisc(towers, 2, numberOfDiscs)){
             console.log('Moving disc from 3rd peg to 2nd peg');
             towers[1].push(towers[2].pop());
+        }
+        if (towers[2].length == numberOfDiscs) {
+            break;
         }
         if (towers[2].length == numberOfDiscs) {
             break;
