@@ -9,7 +9,7 @@ for (let disc = numberOfDiscs; disc > 0; disc--) {
 }
 
 if (numberOfDiscs % 2 === 0) {
-    console.log('even');
+    console.log('Using algorithm for even number of discs.');
     while (true) {
         //1<->2
         if (sizeOfLastDisc(towers, 0, numberOfDiscs) < sizeOfLastDisc(towers, 1, numberOfDiscs)) {
@@ -52,7 +52,7 @@ if (numberOfDiscs % 2 === 0) {
         }
     }
 } else {
-    console.log('odd');
+    console.log('Using algorithm for odd number of discs.');
     while (true) {
         //1<->3
         if (sizeOfLastDisc(towers, 0, numberOfDiscs) < sizeOfLastDisc(towers, 2, numberOfDiscs)) {
