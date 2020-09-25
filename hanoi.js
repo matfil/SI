@@ -1,5 +1,9 @@
 const args = process.argv.slice(2);
 const numberOfDiscs = Number(args[0]);
+    if (args.length === 0 || !numberOfDiscs){
+        console.log('Usage: node hanoi.js <number>');
+        return;
+    }
 console.log('Computing steps for ' + numberOfDiscs + ' discs.');
 console.log('init');
 const towers = [[], [], []];
