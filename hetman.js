@@ -25,11 +25,11 @@ findSolution();
 if (all){
     console.log('results:');
 completeSolutions.forEach(solution => {
-    console.log(solution);
+    console.log(JSON.stringify(solution));
 });
 } else {
     console.log('result:');
-    console.log(completeSolutions[0]);
+    console.log(JSON.stringify(completeSolutions[0]));
 }
 function findSolution (solution = []) {
     if (solution.length == edge) {
